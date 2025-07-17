@@ -42,9 +42,9 @@ const Index = () => {
               <Icon name="ShoppingCart" className="h-5 w-5 mr-2" />
               Каталог товаров
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
-              <Icon name="MapPin" className="h-5 w-5 mr-2" />
-              Наш адрес
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600 group">
+              <Icon name="MapPin" className="h-5 w-5 mr-2 text-white group-hover:text-green-600" />
+              <span className="text-white group-hover:text-green-600">Наш адрес</span>
             </Button>
           </div>
         </div>
