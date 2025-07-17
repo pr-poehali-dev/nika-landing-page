@@ -35,7 +35,7 @@ const Index = () => {
           <h2 className="text-5xl font-bold mb-6">Ветеринарная аптека "Ника"</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Здоровье ваших питомцев — наша главная забота. Качественные лекарства, 
-            витамины и корма для всех видов животных
+            корма и товары для всех видов животных
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
@@ -43,8 +43,8 @@ const Index = () => {
               Каталог товаров
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
-              <Icon name="MessageCircle" className="h-5 w-5 mr-2" />
-              Консультация
+              <Icon name="MapPin" className="h-5 w-5 mr-2" />
+              Наш адрес
             </Button>
           </div>
         </div>
@@ -54,33 +54,19 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
-            Популярные категории
+            Наши товары
           </h3>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 p-3 bg-green-100 rounded-full w-16 h-16 flex items-center justify-center">
                   <Icon name="Pills" className="h-8 w-8 text-green-600" />
                 </div>
-                <CardTitle className="text-lg">Лекарства</CardTitle>
+                <CardTitle className="text-lg">Лекарства для животных</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 text-center">
-                  Рецептурные и безрецептурные препараты для животных
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center">
-                  <Icon name="Zap" className="h-8 w-8 text-blue-600" />
-                </div>
-                <CardTitle className="text-lg">Витамины</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 text-center">
-                  Комплексы витаминов и минералов для здоровья питомцев
+                  Широкий ассортимент ветеринарных препаратов для лечения и профилактики заболеваний у домашних животных
                 </p>
               </CardContent>
             </Card>
@@ -90,25 +76,25 @@ const Index = () => {
                 <div className="mx-auto mb-4 p-3 bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center">
                   <Icon name="Cookie" className="h-8 w-8 text-orange-600" />
                 </div>
-                <CardTitle className="text-lg">Корма</CardTitle>
+                <CardTitle className="text-lg">Корма для животных</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 text-center">
-                  Сбалансированное питание для собак, кошек и других животных
+                  Качественные корма для собак, кошек и других питомцев от проверенных производителей
                 </p>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center">
-                  <Icon name="Heart" className="h-8 w-8 text-purple-600" />
+                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center">
+                  <Icon name="Gamepad2" className="h-8 w-8 text-blue-600" />
                 </div>
-                <CardTitle className="text-lg">Уход</CardTitle>
+                <CardTitle className="text-lg">Игрушки и товары</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 text-center">
-                  Средства гигиены и ухода за животными
+                  Игрушки, аксессуары и товары для ухода за вашими любимыми питомцами
                 </p>
               </CardContent>
             </Card>
@@ -123,13 +109,13 @@ const Index = () => {
             <div>
               <h3 className="text-3xl font-bold mb-6 text-gray-900">О нас</h3>
               <p className="text-gray-600 mb-4">
-                Ветеринарная аптека «Ника» работает уже более 10 лет, предоставляя 
-                качественные лекарственные препараты и товары для животных.
+                Ветеринарная аптека «Ника» работает уже более 10 лет, предлагая 
+                качественные лекарства, корма и товары для животных.
               </p>
               <p className="text-gray-600 mb-6">
-                Мы сотрудничаем только с проверенными производителями и гарантируем 
-                подлинность всех товаров. Наши специалисты всегда готовы помочь 
-                с выбором и дать профессиональную консультацию.
+                В нашем ассортименте: ветеринарные препараты, качественные корма 
+                для всех видов питомцев, игрушки и аксессуары для ухода. 
+                Мы гарантируем подлинность и качество всех товаров.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Badge variant="secondary" className="bg-green-100 text-green-700">
@@ -141,8 +127,8 @@ const Index = () => {
                   Опытные специалисты
                 </Badge>
                 <Badge variant="secondary" className="bg-orange-100 text-orange-700">
-                  <Icon name="Truck" className="h-4 w-4 mr-1" />
-                  Доставка по городу
+                  <Icon name="ShoppingCart" className="h-4 w-4 mr-1" />
+                  Широкий ассортимент
                 </Badge>
               </div>
             </div>
@@ -172,37 +158,37 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
-            Наши услуги
+            Наши преимущества
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="mx-auto mb-6 p-4 bg-green-100 rounded-full w-20 h-20 flex items-center justify-center">
-                <Icon name="Stethoscope" className="h-10 w-10 text-green-600" />
+                <Icon name="Shield" className="h-10 w-10 text-green-600" />
               </div>
-              <h4 className="text-xl font-semibold mb-4 text-gray-900">Консультации</h4>
+              <h4 className="text-xl font-semibold mb-4 text-gray-900">Качество</h4>
               <p className="text-gray-600">
-                Профессиональные консультации по выбору препаратов и 
-                схемам лечения для ваших питомцев
+                Все товары сертифицированы и проходят строгий контроль качества. 
+                Работаем только с проверенными поставщиками
               </p>
             </div>
             <div className="text-center">
               <div className="mx-auto mb-6 p-4 bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center">
-                <Icon name="Truck" className="h-10 w-10 text-blue-600" />
+                <Icon name="Users" className="h-10 w-10 text-blue-600" />
               </div>
-              <h4 className="text-xl font-semibold mb-4 text-gray-900">Доставка</h4>
+              <h4 className="text-xl font-semibold mb-4 text-gray-900">Опыт</h4>
               <p className="text-gray-600">
-                Быстрая доставка лекарств и товаров для животных 
-                по всему городу в день заказа
+                Более 10 лет опыта работы с ветеринарными препаратами. 
+                Поможем с выбором подходящих товаров для ваших питомцев
               </p>
             </div>
             <div className="text-center">
               <div className="mx-auto mb-6 p-4 bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center">
-                <Icon name="Clock" className="h-10 w-10 text-orange-600" />
+                <Icon name="Heart" className="h-10 w-10 text-orange-600" />
               </div>
-              <h4 className="text-xl font-semibold mb-4 text-gray-900">Экстренная помощь</h4>
+              <h4 className="text-xl font-semibold mb-4 text-gray-900">Забота</h4>
               <p className="text-gray-600">
-                Круглосуточная поддержка и возможность получить 
-                необходимые препараты в экстренных случаях
+                Мы понимаем, как важно здоровье ваших питомцев. 
+                Предлагаем только качественные и безопасные товары
               </p>
             </div>
           </div>
@@ -237,7 +223,7 @@ const Index = () => {
             <div>
               <h4 className="text-xl font-semibold mb-4">Готовы помочь вашим питомцам?</h4>
               <p className="mb-6 opacity-90">
-                Свяжитесь с нами прямо сейчас для консультации или оформления заказа
+                Приходите к нам в аптеку или свяжитесь с нами для получения информации о товарах
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
@@ -245,8 +231,8 @@ const Index = () => {
                   Позвонить
                 </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
-                  <Icon name="MessageCircle" className="h-5 w-5 mr-2" />
-                  Написать
+                  <Icon name="MapPin" className="h-5 w-5 mr-2" />
+                  Как проехать
                 </Button>
               </div>
             </div>
